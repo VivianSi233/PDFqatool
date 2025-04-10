@@ -5,7 +5,6 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_openai import ChatOpenAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-
 def qa_agent(openai_api_key, memory, uploaded_file, question):
     model = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key=openai_api_key)
     file_content = uploaded_file.read()
